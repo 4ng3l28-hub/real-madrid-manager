@@ -1,0 +1,117 @@
+
+    body{
+    background: url("../assets/img/fondos/fondopartido.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.contenedor{
+    width: 500px;
+    margin: 40px auto;
+    background: white;
+    color: black;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+h1{
+    text-align:center;
+    color:#d00000;
+}
+
+label{
+    font-weight:bold;
+    display:block;
+    margin-top:10px;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+img{
+    display:block;
+    margin:10px auto;
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    background:#eee;
+    border-radius:50%;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:#d00000;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:black;
+    color:white;
+}
+
+/* ========================= */
+/* BOTÓN VOLVER */
+/* ========================= */
+
+.top-bar{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.btn-volver{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 24px;
+    background:#111827;
+    color:#fff;
+    text-decoration:none;
+    border-radius:12px;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.btn-volver:hover{
+    background:#D4AF37;
+    color:#111827;
+    transform:translateY(-2px);
+}
+
+.btn-volver i{
+    font-size:16px;
+}

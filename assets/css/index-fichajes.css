@@ -1,0 +1,263 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.75)
+    ),
+    url("../assets/img/fondos/fondofichaje.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+    min-height:100vh;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 40px;
+
+    background:rgba(0,0,0,.85);
+    border-bottom:2px solid gold;
+}
+
+header h1{
+    color:gold;
+    font-size:30px;
+}
+
+.logo{
+    width:70px;
+}
+
+.top-actions{
+    width:95%;
+    margin:25px auto;
+}
+
+.btn-add{
+    display:inline-block;
+    padding:12px 20px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-add:hover{
+    transform:translateY(-3px);
+    background:white;
+}
+
+.container{
+    width:95%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+    padding-bottom:40px;
+}
+
+.card{
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 25px rgba(0,0,0,.4);
+}
+
+.top-card{
+    text-align:center;
+    padding:20px;
+}
+
+.foto{
+    width:130px;
+    height:130px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid gold;
+
+    margin:auto;
+}
+
+.nombre{
+    margin-top:15px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.posicion{
+    color:gold;
+    margin-top:5px;
+}
+
+.club{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-top:15px;
+}
+
+.escudo{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+}
+
+.info{
+    padding:20px;
+}
+
+.info-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+}
+
+.label{
+    color:#ccc;
+}
+
+.valor{
+    font-weight:bold;
+}
+
+.badge{
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.compra{
+    background:#0a7d28;
+}
+
+.cesion{
+    background:#0057b8;
+}
+
+.pendiente{
+    background:#c77f00;
+}
+
+.completado{
+    background:#00a651;
+}
+
+.btn{
+    display:block;
+
+    margin:15px;
+
+    padding:12px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    background:gold;
+    color:black;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+.dropdown{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+}
+
+/* BOTÓN */
+.dropbtn{
+    background: white;
+    color: #d00000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* CONTENIDO OCULTO */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* LINKS */
+.dropdown-content a{
+    color: #d00000;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover{
+    background: #d00000;
+    color: white;
+}
+
+/* MOSTRAR AL PASAR EL MOUSE */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* HOVER BOTÓN */
+.dropbtn:hover{
+    background: #d00000;
+    color: white;
+}
+
